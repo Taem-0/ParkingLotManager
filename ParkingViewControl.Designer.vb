@@ -23,8 +23,8 @@ Partial Class ParkingViewControl
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TotalLotsPanel = New System.Windows.Forms.Panel()
-        Me.EmptyLotsPanel = New System.Windows.Forms.Panel()
+        Me.FloorSelectionPanel = New System.Windows.Forms.Panel()
+        Me.StatusPanel = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -61,30 +61,30 @@ Partial Class ParkingViewControl
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel1.Controls.Add(Me.TotalLotsPanel)
-        Me.Panel1.Controls.Add(Me.EmptyLotsPanel)
+        Me.Panel1.Controls.Add(Me.FloorSelectionPanel)
+        Me.Panel1.Controls.Add(Me.StatusPanel)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(752, 93)
         Me.Panel1.TabIndex = 2
         '
-        'TotalLotsPanel
+        'FloorSelectionPanel
         '
-        Me.TotalLotsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TotalLotsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TotalLotsPanel.Location = New System.Drawing.Point(69, 11)
-        Me.TotalLotsPanel.Name = "TotalLotsPanel"
-        Me.TotalLotsPanel.Size = New System.Drawing.Size(406, 70)
-        Me.TotalLotsPanel.TabIndex = 1
+        Me.FloorSelectionPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.FloorSelectionPanel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.FloorSelectionPanel.Location = New System.Drawing.Point(69, 11)
+        Me.FloorSelectionPanel.Name = "FloorSelectionPanel"
+        Me.FloorSelectionPanel.Size = New System.Drawing.Size(406, 70)
+        Me.FloorSelectionPanel.TabIndex = 1
         '
-        'EmptyLotsPanel
+        'StatusPanel
         '
-        Me.EmptyLotsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.EmptyLotsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.EmptyLotsPanel.Location = New System.Drawing.Point(481, 11)
-        Me.EmptyLotsPanel.Name = "EmptyLotsPanel"
-        Me.EmptyLotsPanel.Size = New System.Drawing.Size(200, 70)
-        Me.EmptyLotsPanel.TabIndex = 1
+        Me.StatusPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.StatusPanel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.StatusPanel.Location = New System.Drawing.Point(481, 11)
+        Me.StatusPanel.Name = "StatusPanel"
+        Me.StatusPanel.Size = New System.Drawing.Size(200, 70)
+        Me.StatusPanel.TabIndex = 1
         '
         'TableLayoutPanel2
         '
@@ -375,8 +375,8 @@ Partial Class ParkingViewControl
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents TotalLotsPanel As Panel
-    Friend WithEvents EmptyLotsPanel As Panel
+    Friend WithEvents FloorSelectionPanel As Panel
+    Friend WithEvents StatusPanel As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Label16 As Label
