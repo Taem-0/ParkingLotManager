@@ -12,11 +12,11 @@
         LoadDashBoard()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles HistoryButton.Click
+    Private Sub HistoryButton_Click(sender As Object, e As EventArgs) Handles HistoryButton.Click
         LoadHistory()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ParkingViewButton.Click
+    Private Sub ParkingViewButton_Click(sender As Object, e As EventArgs) Handles ParkingViewButton.Click
         LoadParkingView()
     End Sub
 
