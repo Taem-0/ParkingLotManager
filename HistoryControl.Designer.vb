@@ -52,7 +52,7 @@ Partial Class HistoryControl
         Me.HistoryDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.HistoryDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.HistoryDataGrid.Location = New System.Drawing.Point(0, 78)
-        Me.HistoryDataGrid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HistoryDataGrid.Margin = New System.Windows.Forms.Padding(4)
         Me.HistoryDataGrid.Name = "HistoryDataGrid"
         Me.HistoryDataGrid.RowHeadersWidth = 51
         Me.HistoryDataGrid.Size = New System.Drawing.Size(1003, 661)
@@ -152,7 +152,7 @@ Partial Class HistoryControl
         Me.HistoryToolPanel.Controls.Add(Me.ToolStrip2)
         Me.HistoryToolPanel.Controls.Add(Me.ToolStrip1)
         Me.HistoryToolPanel.Location = New System.Drawing.Point(0, 20)
-        Me.HistoryToolPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HistoryToolPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.HistoryToolPanel.Name = "HistoryToolPanel"
         Me.HistoryToolPanel.Size = New System.Drawing.Size(1003, 50)
         Me.HistoryToolPanel.TabIndex = 1
@@ -161,10 +161,10 @@ Partial Class HistoryControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Black
         Me.Controls.Add(Me.HistoryToolPanel)
         Me.Controls.Add(Me.HistoryDataGrid)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "HistoryControl"
         Me.Size = New System.Drawing.Size(1003, 799)
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).EndInit()

@@ -22,6 +22,7 @@ Partial Class DashBoardControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashBoardControl))
         Me.ParkingLotDataGrid = New System.Windows.Forms.DataGridView()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -53,7 +54,7 @@ Partial Class DashBoardControl
         Me.ParkingLotDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ParkingLotDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ParkingLotDataGrid.Location = New System.Drawing.Point(0, 153)
-        Me.ParkingLotDataGrid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ParkingLotDataGrid.Margin = New System.Windows.Forms.Padding(4)
         Me.ParkingLotDataGrid.Name = "ParkingLotDataGrid"
         Me.ParkingLotDataGrid.RowHeadersWidth = 51
         Me.ParkingLotDataGrid.Size = New System.Drawing.Size(1003, 586)
@@ -70,7 +71,7 @@ Partial Class DashBoardControl
         Me.ToolStrip1.Location = New System.Drawing.Point(12, 118)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.ToolStrip1.Size = New System.Drawing.Size(201, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(201, 25)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -107,12 +108,12 @@ Partial Class DashBoardControl
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.Black
         Me.Panel1.Controls.Add(Me.TotalLotsPanel)
         Me.Panel1.Controls.Add(Me.EmptyLotsPanel)
         Me.Panel1.Controls.Add(Me.OccupiesSlotsPanel)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1003, 114)
         Me.Panel1.TabIndex = 2
@@ -120,10 +121,12 @@ Partial Class DashBoardControl
         'TotalLotsPanel
         '
         Me.TotalLotsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TotalLotsPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.TotalLotsPanel.BackColor = System.Drawing.Color.Transparent
+        Me.TotalLotsPanel.BackgroundImage = CType(resources.GetObject("TotalLotsPanel.BackgroundImage"), System.Drawing.Image)
+        Me.TotalLotsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TotalLotsPanel.Controls.Add(Me.TotalSNumber)
         Me.TotalLotsPanel.Location = New System.Drawing.Point(92, 14)
-        Me.TotalLotsPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TotalLotsPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.TotalLotsPanel.Name = "TotalLotsPanel"
         Me.TotalLotsPanel.Size = New System.Drawing.Size(267, 86)
         Me.TotalLotsPanel.TabIndex = 1
@@ -142,10 +145,12 @@ Partial Class DashBoardControl
         'EmptyLotsPanel
         '
         Me.EmptyLotsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.EmptyLotsPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.EmptyLotsPanel.BackColor = System.Drawing.Color.Transparent
+        Me.EmptyLotsPanel.BackgroundImage = CType(resources.GetObject("EmptyLotsPanel.BackgroundImage"), System.Drawing.Image)
+        Me.EmptyLotsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EmptyLotsPanel.Controls.Add(Me.FreeNumber)
         Me.EmptyLotsPanel.Location = New System.Drawing.Point(641, 14)
-        Me.EmptyLotsPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.EmptyLotsPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.EmptyLotsPanel.Name = "EmptyLotsPanel"
         Me.EmptyLotsPanel.Size = New System.Drawing.Size(267, 86)
         Me.EmptyLotsPanel.TabIndex = 1
@@ -164,10 +169,12 @@ Partial Class DashBoardControl
         'OccupiesSlotsPanel
         '
         Me.OccupiesSlotsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.OccupiesSlotsPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.OccupiesSlotsPanel.BackColor = System.Drawing.Color.Transparent
+        Me.OccupiesSlotsPanel.BackgroundImage = CType(resources.GetObject("OccupiesSlotsPanel.BackgroundImage"), System.Drawing.Image)
+        Me.OccupiesSlotsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.OccupiesSlotsPanel.Controls.Add(Me.OccupiedNumber)
         Me.OccupiesSlotsPanel.Location = New System.Drawing.Point(367, 14)
-        Me.OccupiesSlotsPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OccupiesSlotsPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.OccupiesSlotsPanel.Name = "OccupiesSlotsPanel"
         Me.OccupiesSlotsPanel.Size = New System.Drawing.Size(267, 86)
         Me.OccupiesSlotsPanel.TabIndex = 0
@@ -191,7 +198,7 @@ Partial Class DashBoardControl
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.ParkingLotDataGrid)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "DashBoardControl"
         Me.Size = New System.Drawing.Size(1003, 799)
         CType(Me.ParkingLotDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
