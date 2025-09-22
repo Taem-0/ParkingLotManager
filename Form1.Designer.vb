@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.HistoryButton = New System.Windows.Forms.Button()
+        Me.ParkingViewButton = New System.Windows.Forms.Button()
         Me.RolesPermissionButton = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.HistoryButton = New System.Windows.Forms.Button()
-        Me.ParkingViewButton = New System.Windows.Forms.Button()
         Me.DashBoardButton = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
@@ -39,10 +39,10 @@ Partial Class Form1
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.RolesPermissionButton)
-        Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.HistoryButton)
         Me.Panel1.Controls.Add(Me.ParkingViewButton)
+        Me.Panel1.Controls.Add(Me.RolesPermissionButton)
+        Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.DashBoardButton)
         Me.Panel1.ForeColor = System.Drawing.SystemColors.Control
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -50,6 +50,40 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(267, 801)
         Me.Panel1.TabIndex = 0
+        '
+        'HistoryButton
+        '
+        Me.HistoryButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.HistoryButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight
+        Me.HistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.HistoryButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.HistoryButton.ForeColor = System.Drawing.Color.White
+        Me.HistoryButton.Location = New System.Drawing.Point(13, 331)
+        Me.HistoryButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.HistoryButton.Name = "HistoryButton"
+        Me.HistoryButton.Size = New System.Drawing.Size(244, 47)
+        Me.HistoryButton.TabIndex = 8
+        Me.HistoryButton.Text = "HISTORY"
+        Me.HistoryButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
+        Me.HistoryButton.UseVisualStyleBackColor = True
+        '
+        'ParkingViewButton
+        '
+        Me.ParkingViewButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ParkingViewButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ParkingViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ParkingViewButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.ParkingViewButton.ForeColor = System.Drawing.Color.White
+        Me.ParkingViewButton.Location = New System.Drawing.Point(13, 252)
+        Me.ParkingViewButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.ParkingViewButton.Name = "ParkingViewButton"
+        Me.ParkingViewButton.Size = New System.Drawing.Size(244, 47)
+        Me.ParkingViewButton.TabIndex = 7
+        Me.ParkingViewButton.Text = "PARKING VIEW"
+        Me.ParkingViewButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
+        Me.ParkingViewButton.UseVisualStyleBackColor = True
         '
         'RolesPermissionButton
         '
@@ -90,36 +124,6 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TitlePlaceHolder"
         '
-        'HistoryButton
-        '
-        Me.HistoryButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.HistoryButton.FlatAppearance.BorderSize = 0
-        Me.HistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.HistoryButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.HistoryButton.Location = New System.Drawing.Point(0, 325)
-        Me.HistoryButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.HistoryButton.Name = "HistoryButton"
-        Me.HistoryButton.Size = New System.Drawing.Size(269, 47)
-        Me.HistoryButton.TabIndex = 3
-        Me.HistoryButton.Text = "HISTORY"
-        Me.HistoryButton.UseVisualStyleBackColor = True
-        '
-        'ParkingViewButton
-        '
-        Me.ParkingViewButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ParkingViewButton.FlatAppearance.BorderSize = 0
-        Me.ParkingViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ParkingViewButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.ParkingViewButton.Location = New System.Drawing.Point(0, 246)
-        Me.ParkingViewButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.ParkingViewButton.Name = "ParkingViewButton"
-        Me.ParkingViewButton.Size = New System.Drawing.Size(269, 47)
-        Me.ParkingViewButton.TabIndex = 2
-        Me.ParkingViewButton.Text = "PARKING VIEW"
-        Me.ParkingViewButton.UseVisualStyleBackColor = True
-        '
         'DashBoardButton
         '
         Me.DashBoardButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -127,12 +131,14 @@ Partial Class Form1
         Me.DashBoardButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight
         Me.DashBoardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DashBoardButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.DashBoardButton.Location = New System.Drawing.Point(0, 169)
+        Me.DashBoardButton.ForeColor = System.Drawing.Color.White
+        Me.DashBoardButton.Location = New System.Drawing.Point(13, 175)
         Me.DashBoardButton.Margin = New System.Windows.Forms.Padding(4)
         Me.DashBoardButton.Name = "DashBoardButton"
-        Me.DashBoardButton.Size = New System.Drawing.Size(268, 47)
+        Me.DashBoardButton.Size = New System.Drawing.Size(244, 47)
         Me.DashBoardButton.TabIndex = 1
         Me.DashBoardButton.Text = "DASHBOARD"
+        Me.DashBoardButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
         Me.DashBoardButton.UseVisualStyleBackColor = True
         '
         'MainPanel
@@ -168,11 +174,11 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents ParkingViewButton As Button
     Friend WithEvents DashBoardButton As Button
-    Friend WithEvents HistoryButton As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents RolesPermissionButton As Button
     Public WithEvents MainPanel As Panel
+    Friend WithEvents ParkingViewButton As Button
+    Friend WithEvents HistoryButton As Button
 End Class

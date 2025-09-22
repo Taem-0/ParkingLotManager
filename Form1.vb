@@ -12,12 +12,12 @@
         LoadDashBoard()
     End Sub
 
-    Private Sub HistoryButton_Click(sender As Object, e As EventArgs) Handles HistoryButton.Click
-        LoadHistory()
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ParkingViewButton.Click
+        LoadParkingView()
     End Sub
 
-    Private Sub ParkingViewButton_Click(sender As Object, e As EventArgs) Handles ParkingViewButton.Click
-        LoadParkingView()
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles HistoryButton.Click
+        LoadHistory()
     End Sub
 
     'Mga paraan:  
@@ -40,6 +40,5 @@
         MainPanel.Controls.Add(parkingView)
 
     End Sub
-
 
 End Class
