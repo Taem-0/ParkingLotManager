@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing.Drawing2D
+Imports System.Linq.Expressions
 
 Public Class Helpers
     Shared Sub PanelNaRound(panel As Panel, radius As Integer)
@@ -54,5 +55,30 @@ Public Class Helpers
 
 
     End Sub
+
+    Shared Function calculateDuration(startTime As DateTime, endTime As DateTime) As TimeSpan
+
+        Dim duration As TimeSpan = endTime - startTime
+
+        Return duration
+
+    End Function
+
+    Shared Function calculateFee(duration As TimeSpan) As Decimal
+
+        Dim totalMinutes As Integer = CInt(duration.TotalMinutes)
+
+        Select Case totalMinutes
+            Case 0 To 30
+                Return 0D
+            Case 31 To 60
+                Return 20D
+            Case 61 To 120
+                Return 40D
+            Case Else
+                Return 100D
+        End Select
+
+    End Function
 
 End Class

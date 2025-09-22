@@ -45,9 +45,8 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.ParkingViewButton)
         Me.Panel1.Controls.Add(Me.DashBoardButton)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(267, 801)
+        Me.Panel1.Size = New System.Drawing.Size(200, 651)
         Me.Panel1.TabIndex = 0
         '
         'RolesPermissionButton
@@ -56,10 +55,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RolesPermissionButton.FlatAppearance.BorderSize = 0
         Me.RolesPermissionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RolesPermissionButton.Location = New System.Drawing.Point(0, 428)
-        Me.RolesPermissionButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RolesPermissionButton.Location = New System.Drawing.Point(0, 348)
         Me.RolesPermissionButton.Name = "RolesPermissionButton"
-        Me.RolesPermissionButton.Size = New System.Drawing.Size(269, 47)
+        Me.RolesPermissionButton.Size = New System.Drawing.Size(202, 38)
         Me.RolesPermissionButton.TabIndex = 6
         Me.RolesPermissionButton.Text = "ROLES and PERMISSION"
         Me.RolesPermissionButton.UseVisualStyleBackColor = True
@@ -70,18 +68,16 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(-1, -1)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(269, 146)
+        Me.Panel3.Size = New System.Drawing.Size(202, 119)
         Me.Panel3.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(71, 66)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(53, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(109, 16)
+        Me.Label1.Size = New System.Drawing.Size(85, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TitlePlaceHolder"
         '
@@ -91,10 +87,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.HistoryButton.FlatAppearance.BorderSize = 0
         Me.HistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.HistoryButton.Location = New System.Drawing.Point(0, 325)
-        Me.HistoryButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HistoryButton.Location = New System.Drawing.Point(0, 264)
         Me.HistoryButton.Name = "HistoryButton"
-        Me.HistoryButton.Size = New System.Drawing.Size(269, 47)
+        Me.HistoryButton.Size = New System.Drawing.Size(202, 38)
         Me.HistoryButton.TabIndex = 3
         Me.HistoryButton.Text = "HISTORY"
         Me.HistoryButton.UseVisualStyleBackColor = True
@@ -105,10 +100,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ParkingViewButton.FlatAppearance.BorderSize = 0
         Me.ParkingViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ParkingViewButton.Location = New System.Drawing.Point(0, 246)
-        Me.ParkingViewButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ParkingViewButton.Location = New System.Drawing.Point(0, 200)
         Me.ParkingViewButton.Name = "ParkingViewButton"
-        Me.ParkingViewButton.Size = New System.Drawing.Size(269, 47)
+        Me.ParkingViewButton.Size = New System.Drawing.Size(202, 38)
         Me.ParkingViewButton.TabIndex = 2
         Me.ParkingViewButton.Text = "PARKING VIEW"
         Me.ParkingViewButton.UseVisualStyleBackColor = True
@@ -117,12 +111,11 @@ Partial Class Form1
         '
         Me.DashBoardButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DashBoardButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DashBoardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(163, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(177, Byte), Integer))
         Me.DashBoardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DashBoardButton.Location = New System.Drawing.Point(0, 169)
-        Me.DashBoardButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DashBoardButton.Location = New System.Drawing.Point(0, 137)
         Me.DashBoardButton.Name = "DashBoardButton"
-        Me.DashBoardButton.Size = New System.Drawing.Size(268, 47)
+        Me.DashBoardButton.Size = New System.Drawing.Size(201, 38)
         Me.DashBoardButton.TabIndex = 1
         Me.DashBoardButton.Text = "DASHBOARD"
         Me.DashBoardButton.UseVisualStyleBackColor = True
@@ -134,21 +127,19 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MainPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MainPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.MainPanel.Location = New System.Drawing.Point(289, 0)
-        Me.MainPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MainPanel.Location = New System.Drawing.Point(217, 0)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(1004, 801)
+        Me.MainPanel.Size = New System.Drawing.Size(753, 651)
         Me.MainPanel.TabIndex = 2
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1319, 801)
+        Me.ClientSize = New System.Drawing.Size(989, 651)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MainPanel)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

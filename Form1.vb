@@ -1,6 +1,7 @@
 ﻿Public Class Form1
 
-    Private dash As New DashBoardControl()
+
+    Public dash As New DashBoardControl()
     Private history As New HistoryControl()
     Private parkingView As New ParkingViewControl()
 
@@ -22,8 +23,9 @@
 
     'Mga paraan:  
 
-    Private Sub LoadDashBoard()
+    Public Sub LoadDashBoard()
         MainPanel.Controls.Clear()
+        dash.ParentFormReference = Me
         dash.Dock = DockStyle.Fill
         MainPanel.Controls.Add(dash)
     End Sub
