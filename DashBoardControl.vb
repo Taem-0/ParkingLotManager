@@ -148,4 +148,31 @@ Public Class DashBoardControl
         End If
         Current_Fee = 0D
     End Sub
+    Private Sub DataGridView1_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ParkingLotDataGrid.CellFormatting
+        Dim dgv As DataGridView = DirectCast(sender, DataGridView)
+
+        ' Skip new row
+        If e.RowIndex < 0 Then Return
+
+        Dim status As Object = dgv.Rows(e.RowIndex).Cells(3).Value
+
+        If status Is Nothing Then Return
+
+        Select Case status.ToString()
+            Case "Occupied"
+                dgv.Rows(e.RowIndex).DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#FF8080")
+            Case "Available"
+                dgv.Rows(e.RowIndex).DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#80FF80")
+            Case "Reserved"
+                dgv.Rows(e.RowIndex).DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#8080FF")
+            Case Else
+                dgv.Rows(e.RowIndex).DefaultCellStyle.BackColor = Color.White
+        End Select
+        If e.ColumnIndex = 6 Then
+            e.CellStyle.Font = New Font("Segoe UI", 8, FontStyle.Regular)
+        End If
+    End Sub
+    Private Sub ParkingLotDataGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ParkingLotDataGrid.CellContentClick
+
+    End Sub
 End Class
