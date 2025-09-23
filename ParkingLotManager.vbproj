@@ -152,6 +152,7 @@
     <Compile Include="HistoryControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="InitializeDatabase.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
