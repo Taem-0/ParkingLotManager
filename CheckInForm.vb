@@ -159,4 +159,8 @@
         Label2.Left = (Panel1.Width - Label2.Width) \ 2
         Label2.Top = (Panel1.Height - Label2.Height) \ 2
     End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
 End Class
