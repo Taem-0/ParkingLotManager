@@ -140,20 +140,25 @@
         End If
     End Sub
 
-    Private Function OwnerValid(Owner As String)
+    Private Function OwnerValid(Owner As String) As Boolean
         Owner = Owner.Trim().ToUpper()
-        Dim ownerPattern As String = "^[A-Za-z\s.,]+$"
+
+        Dim ownerPattern As String = "^[A-Za-z]+(?:[.,]?\s[A-Za-z]+)+$"
+
         If Not System.Text.RegularExpressions.Regex.IsMatch(Owner, ownerPattern) Then
-            MessageBox.Show("Invalid owner name format. Only letters, spaces, periods, and commas are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Invalid owner name. Use uppercase letters with single spaces or punctuation only.",
+                        "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             OwnerTextBox.Focus()
             Return False
         End If
-        Return True
-    End Function
 
+        Return True
+
+    End Function
     Private Sub CenterPanel2()
+
         Panel2.Left = (CheckInPanel.Width - Panel2.Width - 100) \ 2
-        'Panel2.Top = (CheckInPanel.Height - Panel2.Height) \ 2
+
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
