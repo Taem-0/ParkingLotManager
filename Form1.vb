@@ -6,7 +6,9 @@
     Private parkingView As New ParkingViewControl()
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        InitializeDatabase.InitializeTABLE()
         LoadDashBoard()
+        DB_Status()
     End Sub
 
     Private Sub DashBoardButton_Click(sender As Object, e As EventArgs) Handles DashBoardButton.Click
@@ -44,4 +46,11 @@
 
     End Sub
 
+    Private Sub DB_Status()
+        If InitializeDatabase.Database_Success = True Then
+            Label2.Text = "Database Connected"
+        Else
+            Label2.Text = "Database Not Connected"
+        End If
+    End Sub
 End Class

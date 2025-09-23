@@ -30,6 +30,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DashBoardButton = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -40,6 +41,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.Panel1.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.axiom_pattern
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.HistoryButton)
         Me.Panel1.Controls.Add(Me.ParkingViewButton)
         Me.Panel1.Controls.Add(Me.RolesPermissionButton)
@@ -152,6 +154,15 @@ Partial Class Form1
         Me.MainPanel.Size = New System.Drawing.Size(1034, 801)
         Me.MainPanel.TabIndex = 2
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 758)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(48, 16)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Label2"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -165,6 +176,7 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
@@ -179,4 +191,5 @@ Partial Class Form1
     Public WithEvents MainPanel As Panel
     Friend WithEvents ParkingViewButton As Button
     Friend WithEvents HistoryButton As Button
+    Friend WithEvents Label2 As Label
 End Class
