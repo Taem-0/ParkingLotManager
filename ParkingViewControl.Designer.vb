@@ -82,7 +82,7 @@ Partial Class ParkingViewControl
         Me.ToolStrip1.Location = New System.Drawing.Point(230, 22)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip1.Size = New System.Drawing.Size(427, 67)
+        Me.ToolStrip1.Size = New System.Drawing.Size(388, 67)
         Me.ToolStrip1.TabIndex = 8
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -142,6 +142,7 @@ Partial Class ParkingViewControl
         'B8
         '
         Me.B8.AutoSize = True
+        Me.B8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B8.Location = New System.Drawing.Point(133, 214)
         Me.B8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -153,6 +154,7 @@ Partial Class ParkingViewControl
         'B4
         '
         Me.B4.AutoSize = True
+        Me.B4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B4.Location = New System.Drawing.Point(5, 214)
         Me.B4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -164,6 +166,7 @@ Partial Class ParkingViewControl
         'B7
         '
         Me.B7.AutoSize = True
+        Me.B7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B7.Location = New System.Drawing.Point(133, 143)
         Me.B7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -175,6 +178,7 @@ Partial Class ParkingViewControl
         'B3
         '
         Me.B3.AutoSize = True
+        Me.B3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B3.Location = New System.Drawing.Point(5, 143)
         Me.B3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -186,6 +190,7 @@ Partial Class ParkingViewControl
         'B6
         '
         Me.B6.AutoSize = True
+        Me.B6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B6.Location = New System.Drawing.Point(133, 72)
         Me.B6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -197,6 +202,7 @@ Partial Class ParkingViewControl
         'B2
         '
         Me.B2.AutoSize = True
+        Me.B2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B2.Location = New System.Drawing.Point(5, 72)
         Me.B2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -208,6 +214,7 @@ Partial Class ParkingViewControl
         'B5
         '
         Me.B5.AutoSize = True
+        Me.B5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B5.Location = New System.Drawing.Point(133, 1)
         Me.B5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -219,6 +226,7 @@ Partial Class ParkingViewControl
         'B1
         '
         Me.B1.AutoSize = True
+        Me.B1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.B1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.B1.Location = New System.Drawing.Point(5, 1)
         Me.B1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -256,6 +264,7 @@ Partial Class ParkingViewControl
         'A8
         '
         Me.A8.AutoSize = True
+        Me.A8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A8.Location = New System.Drawing.Point(133, 214)
         Me.A8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -267,6 +276,7 @@ Partial Class ParkingViewControl
         'A4
         '
         Me.A4.AutoSize = True
+        Me.A4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A4.Location = New System.Drawing.Point(5, 214)
         Me.A4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -278,6 +288,7 @@ Partial Class ParkingViewControl
         'A7
         '
         Me.A7.AutoSize = True
+        Me.A7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A7.Location = New System.Drawing.Point(133, 143)
         Me.A7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -289,6 +300,7 @@ Partial Class ParkingViewControl
         'A3
         '
         Me.A3.AutoSize = True
+        Me.A3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A3.Location = New System.Drawing.Point(5, 143)
         Me.A3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -300,6 +312,7 @@ Partial Class ParkingViewControl
         'A6
         '
         Me.A6.AutoSize = True
+        Me.A6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A6.Location = New System.Drawing.Point(133, 72)
         Me.A6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -311,6 +324,7 @@ Partial Class ParkingViewControl
         'A2
         '
         Me.A2.AutoSize = True
+        Me.A2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A2.Location = New System.Drawing.Point(5, 72)
         Me.A2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -322,6 +336,7 @@ Partial Class ParkingViewControl
         'A5
         '
         Me.A5.AutoSize = True
+        Me.A5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A5.Location = New System.Drawing.Point(133, 1)
         Me.A5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -333,6 +348,7 @@ Partial Class ParkingViewControl
         'A1
         '
         Me.A1.AutoSize = True
+        Me.A1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.A1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.A1.Location = New System.Drawing.Point(5, 1)
         Me.A1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
