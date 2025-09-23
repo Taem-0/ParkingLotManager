@@ -70,13 +70,13 @@ Public Class Helpers
 
         Select Case totalMinutes
             Case 0 To 30
-                Return 0D
-            Case 31 To 60
-                Return 20D
+                Return 50D
+            Case 31 To 100
+                Return 200D
             Case 61 To 120
-                Return 40D
+                Return 400D
             Case Else
-                Return 100D
+                Return 1000D
         End Select
 
     End Function

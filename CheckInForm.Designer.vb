@@ -376,7 +376,7 @@ Partial Class CheckInForm
         '
         Me.PlateNumberLabel.AutoSize = True
         Me.PlateNumberLabel.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PlateNumberLabel.Location = New System.Drawing.Point(8, 55)
+        Me.PlateNumberLabel.Location = New System.Drawing.Point(-2, 55)
         Me.PlateNumberLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PlateNumberLabel.Name = "PlateNumberLabel"
         Me.PlateNumberLabel.Size = New System.Drawing.Size(191, 34)
