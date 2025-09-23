@@ -136,8 +136,16 @@
     End Function
 
     Private Sub CenterPanel2()
-        Panel2.Left = (CheckInPanel.Width - Panel2.Width) \ 2
-        Panel2.Top = (CheckInPanel.Height - Panel2.Height) \ 2
+        Panel2.Left = (CheckInPanel.Width - Panel2.Width - 100) \ 2
+        'Panel2.Top = (CheckInPanel.Height - Panel2.Height) \ 2
+    End Sub
 
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Panel1_Resize(sender As Object, e As EventArgs) Handles Panel1.Resize
+        Label2.Left = (Panel1.Width - Label2.Width) \ 2
+        Label2.Top = (Panel1.Height - Label2.Height) \ 2
     End Sub
 End Class

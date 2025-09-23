@@ -57,20 +57,20 @@ Public Class InitializeDatabase
                     cmd.ExecuteNonQuery()
                 End Using
 
-                Using cmd As New MySqlCommand("
-                        INSERT IGNORE INTO `parkinghistory`
-                        (HistoryID, SlotID, Slot, Floor, PlateNumber, Owner, Entry, ExitTime, Duration, Fee)
-                        VALUES
-                        (2,32,'B8',2,'LM01','Navea, Romelle','2025-09-22 23:57:43','2025-09-23 02:45:06','00:00:00',100.00),
-                        (3,1,'A1',1,'ACAB','Taeza, Rex','2025-09-23 02:46:40','2025-09-23 02:46:43','00:00:00',0.00),
-                        (4,5,'A5',1,'ULOL','PAKYU','2025-09-23 03:06:11','2025-09-23 03:06:16','00:00:00',0.00),
-                        (5,3,'A3',1,'MEOW','posa','2025-09-23 03:04:29','2025-09-23 03:06:18','00:00:00',0.00),
-                        (6,1,'A1',1,'Mewo','meh','2025-09-23 03:02:41','2025-09-23 03:06:19','00:00:00',0.00),
-                        (7,2,'A2',1,'LAMAW','Me, Rex','2025-09-23 03:01:33','2025-09-23 03:06:21','00:00:00',0.00),
-                        (8,1,'A1',1,'WOWOOW','lmao','2025-09-23 03:14:40','2025-09-23 03:14:51','00:00:00',0.00),
-                        (9,1,'A1',1,'NUYAAHAHH','RAAAA','2025-09-23 03:21:18','2025-09-23 03:21:21','00:00:00',0.00);", conn)
-                    cmd.ExecuteNonQuery()
-                End Using
+                'Using cmd As New MySqlCommand("
+                '        INSERT IGNORE INTO `parkinghistory`
+                '        (HistoryID, SlotID, Slot, Floor, PlateNumber, Owner, Entry, ExitTime, Duration, Fee)
+                '        VALUES
+                '        (2,32,'B8',2,'LM01','Navea, Romelle','2025-09-22 23:57:43','2025-09-23 02:45:06','00:00:00',100.00),
+                '        (3,1,'A1',1,'ACAB','Taeza, Rex','2025-09-23 02:46:40','2025-09-23 02:46:43','00:00:00',0.00),
+                '        (4,5,'A5',1,'ULOL','PAKYU','2025-09-23 03:06:11','2025-09-23 03:06:16','00:00:00',0.00),
+                '        (5,3,'A3',1,'MEOW','posa','2025-09-23 03:04:29','2025-09-23 03:06:18','00:00:00',0.00),
+                '        (6,1,'A1',1,'Mewo','meh','2025-09-23 03:02:41','2025-09-23 03:06:19','00:00:00',0.00),
+                '        (7,2,'A2',1,'LAMAW','Me, Rex','2025-09-23 03:01:33','2025-09-23 03:06:21','00:00:00',0.00),
+                '        (8,1,'A1',1,'WOWOOW','lmao','2025-09-23 03:14:40','2025-09-23 03:14:51','00:00:00',0.00),
+                '        (9,1,'A1',1,'NUYAAHAHH','RAAAA','2025-09-23 03:21:18','2025-09-23 03:21:21','00:00:00',0.00);", conn)
+                '    cmd.ExecuteNonQuery()
+                'End Using
 
                 Using cmd As New MySqlCommand("
                         INSERT IGNORE INTO `parkingslots` 
