@@ -22,6 +22,8 @@ Partial Class DashBoardControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ParkingLotDataGrid = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TotalLotsPanel = New System.Windows.Forms.Panel()
@@ -52,12 +54,29 @@ Partial Class DashBoardControl
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ParkingLotDataGrid.BackgroundColor = System.Drawing.Color.White
         Me.ParkingLotDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ParkingLotDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.ParkingLotDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.ParkingLotDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Verdana", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ParkingLotDataGrid.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParkingLotDataGrid.Location = New System.Drawing.Point(0, 153)
         Me.ParkingLotDataGrid.Margin = New System.Windows.Forms.Padding(4)
         Me.ParkingLotDataGrid.Name = "ParkingLotDataGrid"
         Me.ParkingLotDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ParkingLotDataGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.ParkingLotDataGrid.RowHeadersVisible = False
         Me.ParkingLotDataGrid.RowHeadersWidth = 51
         Me.ParkingLotDataGrid.Size = New System.Drawing.Size(1003, 586)
