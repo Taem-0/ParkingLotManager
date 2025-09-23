@@ -10,6 +10,7 @@
 
     Private Sub CheckInPanel_Resize(sender As Object, e As EventArgs) Handles CheckInPanel.Resize
         Helpers.PanelNaRound(CheckInPanel, 30)
+        CenterPanel2()
     End Sub
 
     Private Sub ProcessCheckIn()
@@ -134,4 +135,9 @@
         Return True
     End Function
 
+    Private Sub CenterPanel2()
+        Panel2.Left = (CheckInPanel.Width - Panel2.Width) \ 2
+        Panel2.Top = (CheckInPanel.Height - Panel2.Height) \ 2
+
+    End Sub
 End Class
