@@ -53,10 +53,15 @@
 
 
         'SlotLabel.Text = "Selected: Floor " & selectedFloor & ", Slot " & selectedSlot
-        ToolStripDropDownButton1.Text = "Selected: Floor " & selectedFloor & ", Slot " & selectedSlot
+        ToolStripDropDownButton1.Text = "Floor " & selectedFloor & ", Slot " & selectedSlot
     End Sub
 
     Private Sub ConfirmButton_Click(sender As Object, e As EventArgs) Handles ConfirmButton.Click
+
+        If ParkingLotController.IsSlotOccupied(selectedFloor, selectedSlot) Then
+            MessageBox.Show("The selected slot is already occupied. Please choose a different slot.", "Slot Occupied", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
 
         If PlateNoValid(PlateNoTextBox.Text) = False Then
             Return
