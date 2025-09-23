@@ -24,6 +24,8 @@ Public Class DashBoardControl
         Helpers.PanelNaRound(EmptyLotsPanel, 15)
         Helpers.GridNaRound(ParkingLotDataGrid, 15)
 
+        ParkingLotDataGrid.ReadOnly = True
+
 
     End Sub
 
