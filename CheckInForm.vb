@@ -51,10 +51,24 @@
         selectedSlot = clickedSlot.Text
 
 
-        SlotLabel.Text = "Selected: Floor " & selectedFloor & ", Slot " & selectedSlot
+        'SlotLabel.Text = "Selected: Floor " & selectedFloor & ", Slot " & selectedSlot
+        ToolStripDropDownButton1.Text = "Selected: Floor " & selectedFloor & ", Slot " & selectedSlot
     End Sub
 
     Private Sub ConfirmButton_Click(sender As Object, e As EventArgs) Handles ConfirmButton.Click
+
+        If PlateNoValid(PlateNoTextBox.Text) = False Then
+            Return
+        End If
+
+        If OwnerValid(OwnerTextBox.Text) = False Then
+            Return
+        End If
+
+        If selectedSlot Is Nothing Or selectedSlot = "" Then
+            MessageBox.Show("Please select a slot.", "No Slot Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
 
         ProcessCheckIn()
         Me.Parent.Controls.Remove(Me)
@@ -75,4 +89,49 @@
         End If
 
     End Sub
+
+    Private Sub PlateNoTextBox_TextChanged(sender As Object, e As EventArgs) Handles PlateNoTextBox.TextChanged
+
+    End Sub
+
+    Private Sub PlateNoTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PlateNoTextBox.KeyPress
+        If Not Char.IsLetterOrDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso e.KeyChar <> " "c Then
+            e.Handled = True
+        End If
+    End Sub
+
+
+    Private Function PlateNoValid(PlateNo As String)
+        PlateNo = PlateNo.Trim().ToUpper()
+        Dim platePattern As String = "^[A-Z]{3}\s?\d{3,4}$|^[A-Z]{2}\s?\d{4}$|^\d{3,4}\s?[A-Z]{2,3}$"
+
+        If Not System.Text.RegularExpressions.Regex.IsMatch(PlateNo, platePattern) Then
+            MessageBox.Show("Invalid plate number format. Example: ABC 123, ABC 1234, AB 1234, or 123 AB", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            PlateNoTextBox.Focus()
+            Return False
+        End If
+        Return True
+    End Function
+
+    Private Sub OwnerTextBox_TextChanged(sender As Object, e As EventArgs) Handles OwnerTextBox.TextChanged
+
+    End Sub
+
+    Private Sub OwnerTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles OwnerTextBox.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso e.KeyChar <> " "c AndAlso e.KeyChar <> "."c AndAlso e.KeyChar <> ","c Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Function OwnerValid(Owner As String)
+        Owner = Owner.Trim().ToUpper()
+        Dim ownerPattern As String = "^[A-Za-z\s.,]+$"
+        If Not System.Text.RegularExpressions.Regex.IsMatch(Owner, ownerPattern) Then
+            MessageBox.Show("Invalid owner name format. Only letters, spaces, periods, and commas are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            OwnerTextBox.Focus()
+            Return False
+        End If
+        Return True
+    End Function
+
 End Class
