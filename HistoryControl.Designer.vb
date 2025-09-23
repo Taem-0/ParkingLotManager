@@ -25,7 +25,9 @@ Partial Class HistoryControl
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.HistoryDataGrid = New System.Windows.Forms.DataGridView()
         Me.HistoryToolPanel = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HistoryToolPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'HistoryDataGrid
@@ -58,12 +60,23 @@ Partial Class HistoryControl
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.HistoryToolPanel.BackColor = System.Drawing.Color.Transparent
         Me.HistoryToolPanel.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.Untitled
-        Me.HistoryToolPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HistoryToolPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.HistoryToolPanel.Controls.Add(Me.Label1)
         Me.HistoryToolPanel.Location = New System.Drawing.Point(4, 20)
         Me.HistoryToolPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.HistoryToolPanel.Name = "HistoryToolPanel"
         Me.HistoryToolPanel.Size = New System.Drawing.Size(995, 50)
         Me.HistoryToolPanel.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(443, 14)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(105, 36)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "LOGS"
         '
         'HistoryControl
         '
@@ -76,9 +89,12 @@ Partial Class HistoryControl
         Me.Name = "HistoryControl"
         Me.Size = New System.Drawing.Size(1003, 799)
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HistoryToolPanel.ResumeLayout(False)
+        Me.HistoryToolPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents HistoryDataGrid As DataGridView
     Friend WithEvents HistoryToolPanel As Panel
+    Friend WithEvents Label1 As Label
 End Class
