@@ -24,10 +24,9 @@ Partial Class CheckInForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CheckInForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.CheckInPanel = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ExButton = New System.Windows.Forms.Button()
-        Me.ConfirmButton = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
@@ -64,14 +63,17 @@ Partial Class CheckInForm
         Me.B6ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.B7ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.B8ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OwnerTextBox = New System.Windows.Forms.TextBox()
-        Me.OwnerLabel = New System.Windows.Forms.Label()
-        Me.PlateNoTextBox = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PlateNumberLabel = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ExButton = New System.Windows.Forms.Button()
+        Me.PlateNoTextBox = New System.Windows.Forms.TextBox()
+        Me.ConfirmButton = New System.Windows.Forms.Button()
+        Me.OwnerLabel = New System.Windows.Forms.Label()
+        Me.OwnerTextBox = New System.Windows.Forms.TextBox()
+        Me.Panel1.SuspendLayout()
         Me.CheckInPanel.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -79,11 +81,24 @@ Partial Class CheckInForm
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Panel1.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.axiom_pattern
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1003, 114)
         Me.Panel1.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Verdana", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(392, 38)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(223, 45)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "CHECK IN"
         '
         'CheckInPanel
         '
@@ -91,6 +106,7 @@ Partial Class CheckInForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckInPanel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.CheckInPanel.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.axiom_pattern
         Me.CheckInPanel.Controls.Add(Me.Panel2)
         Me.CheckInPanel.Location = New System.Drawing.Point(0, 153)
         Me.CheckInPanel.Margin = New System.Windows.Forms.Padding(4)
@@ -98,37 +114,20 @@ Partial Class CheckInForm
         Me.CheckInPanel.Size = New System.Drawing.Size(1003, 586)
         Me.CheckInPanel.TabIndex = 3
         '
-        'Label1
+        'Panel2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 170)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(177, 28)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Parking Slot:"
-        '
-        'ExButton
-        '
-        Me.ExButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ExButton.Location = New System.Drawing.Point(382, 236)
-        Me.ExButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.ExButton.Name = "ExButton"
-        Me.ExButton.Size = New System.Drawing.Size(122, 36)
-        Me.ExButton.TabIndex = 9
-        Me.ExButton.Text = "Cancel"
-        Me.ExButton.UseVisualStyleBackColor = False
-        '
-        'ConfirmButton
-        '
-        Me.ConfirmButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ConfirmButton.Location = New System.Drawing.Point(217, 236)
-        Me.ConfirmButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.ConfirmButton.Name = "ConfirmButton"
-        Me.ConfirmButton.Size = New System.Drawing.Size(122, 36)
-        Me.ConfirmButton.TabIndex = 8
-        Me.ConfirmButton.Text = "Confirm"
-        Me.ConfirmButton.UseVisualStyleBackColor = False
+        Me.Panel2.Controls.Add(Me.ToolStrip1)
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Controls.Add(Me.PlateNumberLabel)
+        Me.Panel2.Controls.Add(Me.ExButton)
+        Me.Panel2.Controls.Add(Me.PlateNoTextBox)
+        Me.Panel2.Controls.Add(Me.ConfirmButton)
+        Me.Panel2.Controls.Add(Me.OwnerLabel)
+        Me.Panel2.Controls.Add(Me.OwnerTextBox)
+        Me.Panel2.Location = New System.Drawing.Point(223, 30)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(550, 462)
+        Me.Panel2.TabIndex = 11
         '
         'ToolStrip1
         '
@@ -363,34 +362,15 @@ Partial Class CheckInForm
         Me.B8ToolStripMenuItem1.Size = New System.Drawing.Size(110, 26)
         Me.B8ToolStripMenuItem1.Text = "B8"
         '
-        'OwnerTextBox
+        'Label1
         '
-        Me.OwnerTextBox.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OwnerTextBox.Location = New System.Drawing.Point(197, 118)
-        Me.OwnerTextBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.OwnerTextBox.Name = "OwnerTextBox"
-        Me.OwnerTextBox.Size = New System.Drawing.Size(345, 32)
-        Me.OwnerTextBox.TabIndex = 3
-        '
-        'OwnerLabel
-        '
-        Me.OwnerLabel.AutoSize = True
-        Me.OwnerLabel.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OwnerLabel.Location = New System.Drawing.Point(49, 115)
-        Me.OwnerLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.OwnerLabel.Name = "OwnerLabel"
-        Me.OwnerLabel.Size = New System.Drawing.Size(140, 34)
-        Me.OwnerLabel.TabIndex = 2
-        Me.OwnerLabel.Text = "Owner: "
-        '
-        'PlateNoTextBox
-        '
-        Me.PlateNoTextBox.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PlateNoTextBox.Location = New System.Drawing.Point(197, 55)
-        Me.PlateNoTextBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.PlateNoTextBox.Name = "PlateNoTextBox"
-        Me.PlateNoTextBox.Size = New System.Drawing.Size(345, 32)
-        Me.PlateNoTextBox.TabIndex = 1
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 170)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(177, 28)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "Parking Slot:"
         '
         'PlateNumberLabel
         '
@@ -403,20 +383,56 @@ Partial Class CheckInForm
         Me.PlateNumberLabel.TabIndex = 0
         Me.PlateNumberLabel.Text = "Plate No. : "
         '
-        'Panel2
+        'ExButton
         '
-        Me.Panel2.Controls.Add(Me.ToolStrip1)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.PlateNumberLabel)
-        Me.Panel2.Controls.Add(Me.ExButton)
-        Me.Panel2.Controls.Add(Me.PlateNoTextBox)
-        Me.Panel2.Controls.Add(Me.ConfirmButton)
-        Me.Panel2.Controls.Add(Me.OwnerLabel)
-        Me.Panel2.Controls.Add(Me.OwnerTextBox)
-        Me.Panel2.Location = New System.Drawing.Point(203, 100)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(578, 376)
-        Me.Panel2.TabIndex = 11
+        Me.ExButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ExButton.Location = New System.Drawing.Point(382, 236)
+        Me.ExButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.ExButton.Name = "ExButton"
+        Me.ExButton.Size = New System.Drawing.Size(122, 36)
+        Me.ExButton.TabIndex = 9
+        Me.ExButton.Text = "Cancel"
+        Me.ExButton.UseVisualStyleBackColor = False
+        '
+        'PlateNoTextBox
+        '
+        Me.PlateNoTextBox.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PlateNoTextBox.Location = New System.Drawing.Point(197, 55)
+        Me.PlateNoTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PlateNoTextBox.Name = "PlateNoTextBox"
+        Me.PlateNoTextBox.Size = New System.Drawing.Size(345, 32)
+        Me.PlateNoTextBox.TabIndex = 1
+        '
+        'ConfirmButton
+        '
+        Me.ConfirmButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ConfirmButton.Location = New System.Drawing.Point(217, 236)
+        Me.ConfirmButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.ConfirmButton.Name = "ConfirmButton"
+        Me.ConfirmButton.Size = New System.Drawing.Size(122, 36)
+        Me.ConfirmButton.TabIndex = 8
+        Me.ConfirmButton.Text = "Confirm"
+        Me.ConfirmButton.UseVisualStyleBackColor = False
+        '
+        'OwnerLabel
+        '
+        Me.OwnerLabel.AutoSize = True
+        Me.OwnerLabel.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OwnerLabel.Location = New System.Drawing.Point(49, 115)
+        Me.OwnerLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.OwnerLabel.Name = "OwnerLabel"
+        Me.OwnerLabel.Size = New System.Drawing.Size(140, 34)
+        Me.OwnerLabel.TabIndex = 2
+        Me.OwnerLabel.Text = "Owner: "
+        '
+        'OwnerTextBox
+        '
+        Me.OwnerTextBox.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OwnerTextBox.Location = New System.Drawing.Point(197, 118)
+        Me.OwnerTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.OwnerTextBox.Name = "OwnerTextBox"
+        Me.OwnerTextBox.Size = New System.Drawing.Size(345, 32)
+        Me.OwnerTextBox.TabIndex = 3
         '
         'CheckInForm
         '
@@ -428,11 +444,13 @@ Partial Class CheckInForm
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CheckInForm"
         Me.Size = New System.Drawing.Size(1003, 799)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.CheckInPanel.ResumeLayout(False)
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -482,4 +500,5 @@ Partial Class CheckInForm
     Friend WithEvents ConfirmButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label2 As Label
 End Class
