@@ -142,9 +142,9 @@
 
     Private Function OwnerValid(Owner As String)
         Owner = Owner.Trim().ToUpper()
-        Dim ownerPattern As String = "^[A-Za-z\s.,]+$"
+        Dim ownerPattern As String = "^[A-Za-z]+(?:[.,]?[ ]?[A-Za-z]+){1,20}$"
         If Not System.Text.RegularExpressions.Regex.IsMatch(Owner, ownerPattern) Then
-            MessageBox.Show("Invalid owner name format. Only letters, spaces, periods, and commas are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Invalid owner name format. Only letters, commas, periods, and no multi spaces are allowed. Atleast 2 Characters.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             OwnerTextBox.Focus()
             Return False
         End If
