@@ -386,6 +386,7 @@ Partial Class CheckInForm
         'ExButton
         '
         Me.ExButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ExButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ExButton.Location = New System.Drawing.Point(382, 236)
         Me.ExButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ExButton.Name = "ExButton"
@@ -406,6 +407,7 @@ Partial Class CheckInForm
         'ConfirmButton
         '
         Me.ConfirmButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ConfirmButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ConfirmButton.Location = New System.Drawing.Point(217, 236)
         Me.ConfirmButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ConfirmButton.Name = "ConfirmButton"
