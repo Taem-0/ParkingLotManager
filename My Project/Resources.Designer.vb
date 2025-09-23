@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property axiom_pattern() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("axiom-pattern", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property round_cube() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("round_cube", resourceCulture)
@@ -76,6 +86,26 @@ Namespace My.Resources
         Friend ReadOnly Property round_cube_sidebar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("round_cube_sidebar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property round_cube2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("round_cube2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property round_cube3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("round_cube3", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

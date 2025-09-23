@@ -38,8 +38,11 @@ Public Class DashBoardControl
         Labels()
     End Sub
 
-    Private Sub CheckInButton_Click(sender As Object, e As EventArgs) Handles CheckInButton.Click
+    Private Sub CheckInButton_Click(sender As Object, e As EventArgs)
+        CheckIn()
+    End Sub
 
+    Private Sub CheckIn()
         If ParentFormReference IsNot Nothing Then
 
             ParentFormReference.MainPanel.Controls.Clear()
@@ -53,20 +56,8 @@ Public Class DashBoardControl
             ParentFormReference.MainPanel.Controls.Add(checkInForm)
 
         End If
-
-
-
     End Sub
 
-    Private Sub CheckOutButton_Click(sender As Object, e As EventArgs) Handles CheckOutButton.Click
-
-        ProcessHistory()
-
-        ProcessCheckOut()
-
-        history.LoadHistoryDataGrid()
-
-    End Sub
 
     Private Sub ProcessCheckOut()
 
@@ -134,5 +125,17 @@ Public Class DashBoardControl
 
 
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        CheckIn()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ProcessHistory()
+
+        ProcessCheckOut()
+
+        history.LoadHistoryDataGrid()
     End Sub
 End Class
