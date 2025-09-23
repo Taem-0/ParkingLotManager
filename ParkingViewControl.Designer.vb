@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ParkingViewControl
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -24,26 +24,28 @@ Partial Class ParkingViewControl
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ParkingViewControl))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.FloorSelectionPanel = New System.Windows.Forms.Panel()
-        Me.StatusPanel = New System.Windows.Forms.Panel()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.B8 = New System.Windows.Forms.Label()
+        Me.B4 = New System.Windows.Forms.Label()
+        Me.B7 = New System.Windows.Forms.Label()
+        Me.B3 = New System.Windows.Forms.Label()
+        Me.B6 = New System.Windows.Forms.Label()
+        Me.B2 = New System.Windows.Forms.Label()
+        Me.B5 = New System.Windows.Forms.Label()
+        Me.B1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.A8 = New System.Windows.Forms.Label()
+        Me.A4 = New System.Windows.Forms.Label()
+        Me.A7 = New System.Windows.Forms.Label()
+        Me.A3 = New System.Windows.Forms.Label()
+        Me.A6 = New System.Windows.Forms.Label()
+        Me.A2 = New System.Windows.Forms.Label()
+        Me.A5 = New System.Windows.Forms.Label()
+        Me.A1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -51,6 +53,7 @@ Partial Class ParkingViewControl
         Me.ExitLabel = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -62,37 +65,53 @@ Partial Class ParkingViewControl
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.FloorSelectionPanel)
-        Me.Panel1.Controls.Add(Me.StatusPanel)
+        Me.Panel1.Controls.Add(Me.ToolStrip1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1003, 114)
         Me.Panel1.TabIndex = 2
         '
-        'FloorSelectionPanel
+        'ToolStrip1
         '
-        Me.FloorSelectionPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.FloorSelectionPanel.BackColor = System.Drawing.Color.Transparent
-        Me.FloorSelectionPanel.BackgroundImage = CType(resources.GetObject("FloorSelectionPanel.BackgroundImage"), System.Drawing.Image)
-        Me.FloorSelectionPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.FloorSelectionPanel.Location = New System.Drawing.Point(92, 14)
-        Me.FloorSelectionPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.FloorSelectionPanel.Name = "FloorSelectionPanel"
-        Me.FloorSelectionPanel.Size = New System.Drawing.Size(541, 86)
-        Me.FloorSelectionPanel.TabIndex = 1
+        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.None
+        Me.ToolStrip1.Font = New System.Drawing.Font("Verdana", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(230, 22)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ToolStrip1.Size = New System.Drawing.Size(427, 67)
+        Me.ToolStrip1.TabIndex = 8
+        Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'StatusPanel
+        'ToolStripDropDownButton1
         '
-        Me.StatusPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.StatusPanel.BackColor = System.Drawing.Color.Transparent
-        Me.StatusPanel.BackgroundImage = CType(resources.GetObject("StatusPanel.BackgroundImage"), System.Drawing.Image)
-        Me.StatusPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.StatusPanel.Location = New System.Drawing.Point(641, 14)
-        Me.StatusPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.StatusPanel.Name = "StatusPanel"
-        Me.StatusPanel.Size = New System.Drawing.Size(267, 86)
-        Me.StatusPanel.TabIndex = 1
+        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem3})
+        Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never
+        Me.ToolStripDropDownButton1.Padding = New System.Windows.Forms.Padding(150, 0, 0, 0)
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(385, 64)
+        Me.ToolStripDropDownButton1.Text = "Floor 1"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Padding = New System.Windows.Forms.Padding(50, 1, 0, 1)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(441, 64)
+        Me.ToolStripMenuItem2.Tag = "1"
+        Me.ToolStripMenuItem2.Text = "1st Floor"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(391, 64)
+        Me.ToolStripMenuItem3.Tag = "2"
+        Me.ToolStripMenuItem3.Text = "2nd Floor"
         '
         'TableLayoutPanel2
         '
@@ -100,14 +119,14 @@ Partial Class ParkingViewControl
         Me.TableLayoutPanel2.ColumnCount = 2
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Label16, 1, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label15, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label14, 1, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label13, 0, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label12, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label9, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.B8, 1, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.B4, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.B7, 1, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.B3, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.B6, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.B2, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.B5, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.B1, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(585, 143)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
@@ -120,85 +139,93 @@ Partial Class ParkingViewControl
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(258, 286)
         Me.TableLayoutPanel2.TabIndex = 1
         '
-        'Label16
+        'B8
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(133, 214)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(23, 16)
-        Me.Label16.TabIndex = 9
-        Me.Label16.Text = "B8"
+        Me.B8.AutoSize = True
+        Me.B8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B8.Location = New System.Drawing.Point(133, 214)
+        Me.B8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B8.Name = "B8"
+        Me.B8.Size = New System.Drawing.Size(120, 71)
+        Me.B8.TabIndex = 9
+        Me.B8.Text = "B8"
         '
-        'Label15
+        'B4
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(5, 214)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(23, 16)
-        Me.Label15.TabIndex = 8
-        Me.Label15.Text = "B4"
+        Me.B4.AutoSize = True
+        Me.B4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B4.Location = New System.Drawing.Point(5, 214)
+        Me.B4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B4.Name = "B4"
+        Me.B4.Size = New System.Drawing.Size(119, 71)
+        Me.B4.TabIndex = 8
+        Me.B4.Text = "B4"
         '
-        'Label14
+        'B7
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(133, 143)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(23, 16)
-        Me.Label14.TabIndex = 7
-        Me.Label14.Text = "B7"
+        Me.B7.AutoSize = True
+        Me.B7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B7.Location = New System.Drawing.Point(133, 143)
+        Me.B7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B7.Name = "B7"
+        Me.B7.Size = New System.Drawing.Size(120, 70)
+        Me.B7.TabIndex = 7
+        Me.B7.Text = "B7"
         '
-        'Label13
+        'B3
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(5, 143)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(23, 16)
-        Me.Label13.TabIndex = 6
-        Me.Label13.Text = "B3"
+        Me.B3.AutoSize = True
+        Me.B3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B3.Location = New System.Drawing.Point(5, 143)
+        Me.B3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B3.Name = "B3"
+        Me.B3.Size = New System.Drawing.Size(119, 70)
+        Me.B3.TabIndex = 6
+        Me.B3.Text = "B3"
         '
-        'Label12
+        'B6
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(133, 72)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(23, 16)
-        Me.Label12.TabIndex = 5
-        Me.Label12.Text = "B6"
+        Me.B6.AutoSize = True
+        Me.B6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B6.Location = New System.Drawing.Point(133, 72)
+        Me.B6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B6.Name = "B6"
+        Me.B6.Size = New System.Drawing.Size(120, 70)
+        Me.B6.TabIndex = 5
+        Me.B6.Text = "B6"
         '
-        'Label11
+        'B2
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(5, 72)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(23, 16)
-        Me.Label11.TabIndex = 4
-        Me.Label11.Text = "B2"
+        Me.B2.AutoSize = True
+        Me.B2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B2.Location = New System.Drawing.Point(5, 72)
+        Me.B2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B2.Name = "B2"
+        Me.B2.Size = New System.Drawing.Size(119, 70)
+        Me.B2.TabIndex = 4
+        Me.B2.Text = "B2"
         '
-        'Label10
+        'B5
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(133, 1)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(23, 16)
-        Me.Label10.TabIndex = 3
-        Me.Label10.Text = "B5"
+        Me.B5.AutoSize = True
+        Me.B5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B5.Location = New System.Drawing.Point(133, 1)
+        Me.B5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B5.Name = "B5"
+        Me.B5.Size = New System.Drawing.Size(120, 70)
+        Me.B5.TabIndex = 3
+        Me.B5.Text = "B5"
         '
-        'Label9
+        'B1
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(5, 1)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(23, 16)
-        Me.Label9.TabIndex = 2
-        Me.Label9.Text = "B1"
+        Me.B1.AutoSize = True
+        Me.B1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.B1.Location = New System.Drawing.Point(5, 1)
+        Me.B1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.B1.Name = "B1"
+        Me.B1.Size = New System.Drawing.Size(119, 70)
+        Me.B1.TabIndex = 2
+        Me.B1.Text = "B1"
         '
         'TableLayoutPanel1
         '
@@ -206,14 +233,14 @@ Partial Class ParkingViewControl
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Label8, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label6, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label5, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.A8, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.A4, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.A7, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.A3, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.A6, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.A2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.A5, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.A1, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(156, 143)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
@@ -226,85 +253,93 @@ Partial Class ParkingViewControl
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(257, 286)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'Label8
+        'A8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(133, 214)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(23, 16)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "A8"
+        Me.A8.AutoSize = True
+        Me.A8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A8.Location = New System.Drawing.Point(133, 214)
+        Me.A8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A8.Name = "A8"
+        Me.A8.Size = New System.Drawing.Size(119, 71)
+        Me.A8.TabIndex = 7
+        Me.A8.Text = "A8"
         '
-        'Label7
+        'A4
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(5, 214)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(23, 16)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "A4"
+        Me.A4.AutoSize = True
+        Me.A4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A4.Location = New System.Drawing.Point(5, 214)
+        Me.A4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A4.Name = "A4"
+        Me.A4.Size = New System.Drawing.Size(119, 71)
+        Me.A4.TabIndex = 6
+        Me.A4.Text = "A4"
         '
-        'Label6
+        'A7
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(133, 143)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(23, 16)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "A7"
+        Me.A7.AutoSize = True
+        Me.A7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A7.Location = New System.Drawing.Point(133, 143)
+        Me.A7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A7.Name = "A7"
+        Me.A7.Size = New System.Drawing.Size(119, 70)
+        Me.A7.TabIndex = 5
+        Me.A7.Text = "A7"
         '
-        'Label5
+        'A3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(5, 143)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(23, 16)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "A3"
+        Me.A3.AutoSize = True
+        Me.A3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A3.Location = New System.Drawing.Point(5, 143)
+        Me.A3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A3.Name = "A3"
+        Me.A3.Size = New System.Drawing.Size(119, 70)
+        Me.A3.TabIndex = 4
+        Me.A3.Text = "A3"
         '
-        'Label4
+        'A6
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(133, 72)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(23, 16)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "A6"
+        Me.A6.AutoSize = True
+        Me.A6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A6.Location = New System.Drawing.Point(133, 72)
+        Me.A6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A6.Name = "A6"
+        Me.A6.Size = New System.Drawing.Size(119, 70)
+        Me.A6.TabIndex = 3
+        Me.A6.Text = "A6"
         '
-        'Label3
+        'A2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 72)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(23, 16)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "A2"
+        Me.A2.AutoSize = True
+        Me.A2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A2.Location = New System.Drawing.Point(5, 72)
+        Me.A2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A2.Name = "A2"
+        Me.A2.Size = New System.Drawing.Size(119, 70)
+        Me.A2.TabIndex = 2
+        Me.A2.Text = "A2"
         '
-        'Label2
+        'A5
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(133, 1)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(23, 16)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "A5"
+        Me.A5.AutoSize = True
+        Me.A5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A5.Location = New System.Drawing.Point(133, 1)
+        Me.A5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A5.Name = "A5"
+        Me.A5.Size = New System.Drawing.Size(119, 70)
+        Me.A5.TabIndex = 1
+        Me.A5.Text = "A5"
         '
-        'Label1
+        'A1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(5, 1)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(23, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "A1"
+        Me.A1.AutoSize = True
+        Me.A1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.A1.Location = New System.Drawing.Point(5, 1)
+        Me.A1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.A1.Name = "A1"
+        Me.A1.Size = New System.Drawing.Size(119, 70)
+        Me.A1.TabIndex = 0
+        Me.A1.Text = "A1"
         '
         'TableLayoutPanel3
         '
@@ -399,6 +434,9 @@ Partial Class ParkingViewControl
         Me.Name = "ParkingViewControl"
         Me.Size = New System.Drawing.Size(1003, 799)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
@@ -409,31 +447,33 @@ Partial Class ParkingViewControl
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents FloorSelectionPanel As Panel
-    Friend WithEvents StatusPanel As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents B8 As Label
+    Friend WithEvents B4 As Label
+    Friend WithEvents B7 As Label
+    Friend WithEvents B3 As Label
+    Friend WithEvents B6 As Label
+    Friend WithEvents B2 As Label
+    Friend WithEvents B5 As Label
+    Friend WithEvents B1 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents A8 As Label
+    Friend WithEvents A4 As Label
+    Friend WithEvents A7 As Label
+    Friend WithEvents A3 As Label
+    Friend WithEvents A6 As Label
+    Friend WithEvents A2 As Label
+    Friend WithEvents A5 As Label
+    Friend WithEvents A1 As Label
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents EntryLabel As Label
     Friend WithEvents ExitLabel As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
 End Class

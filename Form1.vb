@@ -21,6 +21,7 @@
 
     Private Sub ParkingViewButton_Click(sender As Object, e As EventArgs) Handles ParkingViewButton.Click
         LoadParkingView()
+        parkingView.RefreshParkingSlots(1)
     End Sub
 
 
