@@ -28,7 +28,7 @@
 
         Dim entryDate As DateTime = DateTime.Now
 
-        ParkingLotController.checkInParkingLot(status, plateNumber, owner, entryDate, selectedFloor, selectedSlot)
+        ParkingLotController.checkInParkingLot(status, plateNumber, owner, entryDate, SelectedFloor, SelectedSlot)
 
 
     End Sub
@@ -51,19 +51,19 @@
 
 
         Dim parentFloor As ToolStripMenuItem = CType(clickedSlot.OwnerItem, ToolStripMenuItem)
-        selectedFloor = CInt(parentFloor.Tag)
+        SelectedFloor = CInt(parentFloor.Tag)
 
 
-        selectedSlot = clickedSlot.Text
+        SelectedSlot = clickedSlot.Text
 
 
         'SlotLabel.Text = "Selected: Floor " & selectedFloor & ", Slot " & selectedSlot
-        ToolStripDropDownButton1.Text = "Floor " & selectedFloor & ", Slot " & selectedSlot
+        ToolStripDropDownButton1.Text = "Floor " & SelectedFloor & ", Slot " & SelectedSlot
     End Sub
 
     Private Sub ConfirmButton_Click(sender As Object, e As EventArgs) Handles ConfirmButton.Click
 
-        If ParkingLotController.IsSlotOccupied(selectedFloor, selectedSlot) Then
+        If ParkingLotController.IsSlotOccupied(SelectedFloor, SelectedSlot) Then
             MessageBox.Show("The selected slot is already occupied. Please choose a different slot.", "Slot Occupied", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
@@ -76,7 +76,7 @@
             Return
         End If
 
-        If selectedSlot Is Nothing Or selectedSlot = "" Then
+        If SelectedSlot Is Nothing Or SelectedSlot = "" Then
             MessageBox.Show("Please select a slot.", "No Slot Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
@@ -142,12 +142,9 @@
 
     Private Function OwnerValid(Owner As String) As Boolean
         Owner = Owner.Trim().ToUpper()
-
-        Dim ownerPattern As String = "^[A-Za-z]+(?:[.,]?\s[A-Za-z]+)+$"
-
+        Dim ownerPattern As String = "^[A-Za-z\s.,]+$"
         If Not System.Text.RegularExpressions.Regex.IsMatch(Owner, ownerPattern) Then
-            MessageBox.Show("Invalid owner name. Use uppercase letters with single spaces or punctuation only.",
-                        "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Invalid owner name format. Only letters, spaces, periods, and commas are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             OwnerTextBox.Focus()
             Return False
         End If
