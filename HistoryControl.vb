@@ -36,4 +36,13 @@
         HistoryDataGrid.RowHeadersVisible = False
     End Sub
 
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub HistoryToolPanel_Paint(sender As Object, e As EventArgs) Handles HistoryToolPanel.Resize
+        Label1.Left = (HistoryToolPanel.Width - Label1.Width) \ 2
+        Label1.Top = (HistoryToolPanel.Height - Label1.Height) \ 2
+    End Sub
+
 End Class
