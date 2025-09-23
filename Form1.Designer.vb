@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DB_stat = New System.Windows.Forms.Label()
         Me.HistoryButton = New System.Windows.Forms.Button()
         Me.ParkingViewButton = New System.Windows.Forms.Button()
         Me.RolesPermissionButton = New System.Windows.Forms.Button()
@@ -30,7 +31,6 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DashBoardButton = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -41,7 +41,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.Panel1.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.axiom_pattern
-        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.DB_stat)
         Me.Panel1.Controls.Add(Me.HistoryButton)
         Me.Panel1.Controls.Add(Me.ParkingViewButton)
         Me.Panel1.Controls.Add(Me.RolesPermissionButton)
@@ -53,6 +53,18 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(267, 801)
         Me.Panel1.TabIndex = 0
+        '
+        'DB_stat
+        '
+        Me.DB_stat.AutoSize = True
+        Me.DB_stat.BackColor = System.Drawing.Color.Transparent
+        Me.DB_stat.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DB_stat.Location = New System.Drawing.Point(0, 760)
+        Me.DB_stat.Name = "DB_stat"
+        Me.DB_stat.Padding = New System.Windows.Forms.Padding(10, 0, 0, 25)
+        Me.DB_stat.Size = New System.Drawing.Size(64, 41)
+        Me.DB_stat.TabIndex = 5
+        Me.DB_stat.Text = "DB_stat"
         '
         'HistoryButton
         '
@@ -154,15 +166,6 @@ Partial Class Form1
         Me.MainPanel.Size = New System.Drawing.Size(1034, 801)
         Me.MainPanel.TabIndex = 2
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 758)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 16)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Label2"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -191,5 +194,5 @@ Partial Class Form1
     Public WithEvents MainPanel As Panel
     Friend WithEvents ParkingViewButton As Button
     Friend WithEvents HistoryButton As Button
-    Friend WithEvents Label2 As Label
+    Friend WithEvents DB_stat As Label
 End Class

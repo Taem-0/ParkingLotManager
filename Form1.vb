@@ -34,6 +34,7 @@
     End Sub
 
     Private Sub LoadHistory()
+        history.LoadHistoryDataGrid()
         MainPanel.Controls.Clear()
         history.Dock = DockStyle.Fill
         MainPanel.Controls.Add(history)
@@ -48,9 +49,9 @@
 
     Private Sub DB_Status()
         If InitializeDatabase.Database_Success = True Then
-            Label2.Text = "Database Connected"
+            DB_stat.Text = "Database Connected"
         Else
-            Label2.Text = "Database Not Connected"
+            DB_stat.Text = "Database Not Connected"
         End If
     End Sub
 End Class

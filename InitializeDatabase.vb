@@ -6,7 +6,7 @@ Public Class InitializeDatabase
                                 user id=root;
                                 password=;"
 
-    Shared ConnString_Table As String = "server=localhost;
+    Public Shared ConnString_Table As String = "server=localhost;
                                       user id=root;
                                       password=;
                                       database=parkinglotdb;"

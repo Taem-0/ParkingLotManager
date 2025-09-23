@@ -127,11 +127,11 @@ Public Class DashBoardControl
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub CheckIN_Click(sender As Object, e As EventArgs) Handles Button1.Click
         CheckIn()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub CheckOUT_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ProcessHistory()
 
         ProcessCheckOut()
