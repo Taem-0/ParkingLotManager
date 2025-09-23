@@ -26,6 +26,9 @@ Partial Class DashBoardControl
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ParkingLotDataGrid = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TotalLotsPanel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TotalSNumber = New System.Windows.Forms.Label()
@@ -35,15 +38,12 @@ Partial Class DashBoardControl
         Me.OccupiesSlotsPanel = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.FreeSlots = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         CType(Me.ParkingLotDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.TotalLotsPanel.SuspendLayout()
         Me.EmptyLotsPanel.SuspendLayout()
         Me.OccupiesSlotsPanel.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'ParkingLotDataGrid
@@ -95,6 +95,44 @@ Partial Class DashBoardControl
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1003, 114)
         Me.Panel1.TabIndex = 2
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button1.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(100, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(262, 62)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Check In   →"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button2.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(641, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(262, 62)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Check Out ←"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(0, 737)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(100, 0, 100, 0)
+        Me.Panel2.Size = New System.Drawing.Size(1003, 62)
+        Me.Panel2.TabIndex = 5
         '
         'TotalLotsPanel
         '
@@ -207,42 +245,6 @@ Partial Class DashBoardControl
         Me.FreeSlots.TabIndex = 4
         Me.FreeSlots.Text = "0"
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button1.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(100, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(262, 62)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Check In   →"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(641, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(262, 62)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Check Out ←"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 737)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(100, 0, 100, 0)
-        Me.Panel2.Size = New System.Drawing.Size(1003, 62)
-        Me.Panel2.TabIndex = 5
-        '
         'DashBoardControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -256,13 +258,13 @@ Partial Class DashBoardControl
         Me.Size = New System.Drawing.Size(1003, 799)
         CType(Me.ParkingLotDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.TotalLotsPanel.ResumeLayout(False)
         Me.TotalLotsPanel.PerformLayout()
         Me.EmptyLotsPanel.ResumeLayout(False)
         Me.EmptyLotsPanel.PerformLayout()
         Me.OccupiesSlotsPanel.ResumeLayout(False)
         Me.OccupiesSlotsPanel.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

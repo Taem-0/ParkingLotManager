@@ -151,7 +151,6 @@ Public Class DashBoardControl
     Private Sub DataGridView1_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ParkingLotDataGrid.CellFormatting
         Dim dgv As DataGridView = DirectCast(sender, DataGridView)
 
-        ' Skip new row
         If e.RowIndex < 0 Then Return
 
         Dim status As Object = dgv.Rows(e.RowIndex).Cells(3).Value

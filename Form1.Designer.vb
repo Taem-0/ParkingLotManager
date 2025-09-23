@@ -70,6 +70,7 @@ Partial Class Form1
         '
         Me.HistoryButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.HistoryButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.HistoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(163, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(177, Byte), Integer))
         Me.HistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.HistoryButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -86,6 +87,7 @@ Partial Class Form1
         '
         Me.ParkingViewButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ParkingViewButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ParkingViewButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(163, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(177, Byte), Integer))
         Me.ParkingViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ParkingViewButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -140,6 +142,7 @@ Partial Class Form1
         '
         Me.DashBoardButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DashBoardButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DashBoardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(163, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(177, Byte), Integer))
         Me.DashBoardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DashBoardButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
