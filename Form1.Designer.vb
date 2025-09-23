@@ -22,18 +22,17 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DB_stat = New System.Windows.Forms.Label()
         Me.HistoryButton = New System.Windows.Forms.Button()
         Me.ParkingViewButton = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.TotalLotsPanel = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.DashBoardButton = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.TotalLotsPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -114,24 +113,13 @@ Partial Class Form1
         'TotalLotsPanel
         '
         Me.TotalLotsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TotalLotsPanel.BackColor = System.Drawing.SystemColors.Control
-        Me.TotalLotsPanel.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.axiom_pattern
+        Me.TotalLotsPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.TotalLotsPanel.BackgroundImage = CType(resources.GetObject("TotalLotsPanel.BackgroundImage"), System.Drawing.Image)
         Me.TotalLotsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TotalLotsPanel.Controls.Add(Me.Label1)
         Me.TotalLotsPanel.Location = New System.Drawing.Point(11, 30)
         Me.TotalLotsPanel.Name = "TotalLotsPanel"
         Me.TotalLotsPanel.Size = New System.Drawing.Size(181, 70)
         Me.TotalLotsPanel.TabIndex = 3
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(49, 21)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 22)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Parkable"
         '
         'DashBoardButton
         '
@@ -170,14 +158,13 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(989, 651)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MainPanel)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "PARKABLE "
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
-        Me.TotalLotsPanel.ResumeLayout(False)
-        Me.TotalLotsPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -185,7 +172,6 @@ Partial Class Form1
     Friend WithEvents Panel1 As Panel
     Friend WithEvents DashBoardButton As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label1 As Label
     Public WithEvents MainPanel As Panel
     Friend WithEvents ParkingViewButton As Button
     Friend WithEvents HistoryButton As Button
