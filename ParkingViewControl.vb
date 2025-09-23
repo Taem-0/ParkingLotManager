@@ -45,7 +45,7 @@ Public Class ParkingViewControl
 
             checkInForm = New CheckInForm()
             checkInForm.SelectedFloor = CurrentFloor
-            checkInForm.SelectedSlot = slot ' Example slot, you can modify this as needed
+            checkInForm.SelectedSlot = slot
             checkInForm.Dock = DockStyle.Fill
             checkInForm.MainFormReference = ParentFormReference
 
