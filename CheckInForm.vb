@@ -92,7 +92,13 @@
     End Sub
 
     Private Sub PlateNoTextBox_TextChanged(sender As Object, e As EventArgs) Handles PlateNoTextBox.TextChanged
+        Dim tb As TextBox = CType(sender, TextBox)
 
+        Dim selectionStart As Integer = tb.SelectionStart
+
+        tb.Text = tb.Text.ToUpper()
+
+        tb.SelectionStart = selectionStart
     End Sub
 
     Private Sub PlateNoTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PlateNoTextBox.KeyPress
