@@ -5,6 +5,7 @@ Public Class DashBoardControl
     Public Property ParentFormReference As Form1
     Private checkInForm As CheckInForm
     Private history As New HistoryControl
+    Private Current_Fee As Decimal = 0D
 
     Dim db As New DBmanager()
 
@@ -96,6 +97,8 @@ Public Class DashBoardControl
         Dim duration As TimeSpan = Helpers.calculateDuration(entry, exitTime)
         Dim fee As Decimal = Helpers.calculateFee(duration)
 
+        Current_Fee = fee
+
         ParkingHistoryController.postHistoryParkingLot(slotID, plateNumber, owner, entry, floor, slot, exitTime, duration, fee)
 
     End Sub
@@ -137,5 +140,12 @@ Public Class DashBoardControl
         ProcessCheckOut()
 
         history.LoadHistoryDataGrid()
+
+
+        If Not Current_Fee = 0D Then
+            MessageBox.Show("Checked Out Successfully!" & vbCrLf &
+                        "Total Fee: ₱" & Current_Fee.ToString("F2"), "Check Out", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+        Current_Fee = 0D
     End Sub
 End Class
