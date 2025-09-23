@@ -2,7 +2,7 @@
 
 Public Class ParkingViewControl
 
-    Dim CurrentFloor As Integer = 1
+    Public Shared CurrentFloor As Integer = 1
 
     Private Sub ParkingViewControl_Load(sender As Object, e As EventArgs)
         'Helpers.PanelNaRound(FloorSelectionPanel, 15)
