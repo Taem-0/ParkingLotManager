@@ -33,7 +33,6 @@ Partial Class HistoryControl
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.FilterLabel = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.HistoryToolPanel = New System.Windows.Forms.Panel()
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,11 +50,10 @@ Partial Class HistoryControl
         Me.HistoryDataGrid.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.HistoryDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.HistoryDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.HistoryDataGrid.Location = New System.Drawing.Point(0, 78)
-        Me.HistoryDataGrid.Margin = New System.Windows.Forms.Padding(4)
+        Me.HistoryDataGrid.Location = New System.Drawing.Point(0, 63)
         Me.HistoryDataGrid.Name = "HistoryDataGrid"
         Me.HistoryDataGrid.RowHeadersWidth = 51
-        Me.HistoryDataGrid.Size = New System.Drawing.Size(1003, 661)
+        Me.HistoryDataGrid.Size = New System.Drawing.Size(752, 537)
         Me.HistoryDataGrid.TabIndex = 0
         '
         'ToolStrip1
@@ -65,16 +63,16 @@ Partial Class HistoryControl
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SortByLabel, Me.SortByDropDown})
-        Me.ToolStrip1.Location = New System.Drawing.Point(910, 10)
+        Me.ToolStrip1.Location = New System.Drawing.Point(676, 8)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(76, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(63, 25)
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
         '
         'SortByLabel
         '
         Me.SortByLabel.Name = "SortByLabel"
-        Me.SortByLabel.Size = New System.Drawing.Size(59, 22)
+        Me.SortByLabel.Size = New System.Drawing.Size(47, 22)
         Me.SortByLabel.Text = "Sort By:"
         '
         'SortByDropDown
@@ -84,24 +82,24 @@ Partial Class HistoryControl
         Me.SortByDropDown.Image = CType(resources.GetObject("SortByDropDown.Image"), System.Drawing.Image)
         Me.SortByDropDown.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SortByDropDown.Name = "SortByDropDown"
-        Me.SortByDropDown.Size = New System.Drawing.Size(14, 22)
+        Me.SortByDropDown.Size = New System.Drawing.Size(13, 22)
         '
         'DurationToolStripMenuItem
         '
         Me.DurationToolStripMenuItem.Name = "DurationToolStripMenuItem"
-        Me.DurationToolStripMenuItem.Size = New System.Drawing.Size(150, 26)
+        Me.DurationToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.DurationToolStripMenuItem.Text = "Duration"
         '
         'DateToolStripMenuItem
         '
         Me.DateToolStripMenuItem.Name = "DateToolStripMenuItem"
-        Me.DateToolStripMenuItem.Size = New System.Drawing.Size(150, 26)
+        Me.DateToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.DateToolStripMenuItem.Text = "Date"
         '
         'SlotToolStripMenuItem
         '
         Me.SlotToolStripMenuItem.Name = "SlotToolStripMenuItem"
-        Me.SlotToolStripMenuItem.Size = New System.Drawing.Size(150, 26)
+        Me.SlotToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.SlotToolStripMenuItem.Text = "Slot No."
         '
         'ToolStrip2
@@ -111,37 +109,31 @@ Partial Class HistoryControl
         Me.ToolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FilterLabel, Me.ToolStripDropDownButton1})
-        Me.ToolStrip2.Location = New System.Drawing.Point(829, 10)
+        Me.ToolStrip2.Location = New System.Drawing.Point(616, 8)
         Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(62, 25)
+        Me.ToolStrip2.Size = New System.Drawing.Size(52, 25)
         Me.ToolStrip2.TabIndex = 3
         Me.ToolStrip2.Text = "ToolStrip2"
         '
         'FilterLabel
         '
         Me.FilterLabel.Name = "FilterLabel"
-        Me.FilterLabel.Size = New System.Drawing.Size(45, 22)
+        Me.FilterLabel.Size = New System.Drawing.Size(36, 22)
         Me.FilterLabel.Text = "Filter:"
         '
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2})
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
         Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(14, 22)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(174, 26)
-        Me.ToolStripMenuItem1.Text = "Vehicle Type"
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(13, 22)
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(174, 26)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(101, 22)
         Me.ToolStripMenuItem2.Text = "Floor"
         '
         'HistoryToolPanel
@@ -151,22 +143,20 @@ Partial Class HistoryControl
         Me.HistoryToolPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.HistoryToolPanel.Controls.Add(Me.ToolStrip2)
         Me.HistoryToolPanel.Controls.Add(Me.ToolStrip1)
-        Me.HistoryToolPanel.Location = New System.Drawing.Point(0, 20)
-        Me.HistoryToolPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.HistoryToolPanel.Location = New System.Drawing.Point(0, 16)
         Me.HistoryToolPanel.Name = "HistoryToolPanel"
-        Me.HistoryToolPanel.Size = New System.Drawing.Size(1003, 50)
+        Me.HistoryToolPanel.Size = New System.Drawing.Size(752, 41)
         Me.HistoryToolPanel.TabIndex = 1
         '
         'HistoryControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.Controls.Add(Me.HistoryToolPanel)
         Me.Controls.Add(Me.HistoryDataGrid)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "HistoryControl"
-        Me.Size = New System.Drawing.Size(1003, 799)
+        Me.Size = New System.Drawing.Size(752, 649)
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
@@ -187,7 +177,6 @@ Partial Class HistoryControl
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents FilterLabel As ToolStripLabel
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents HistoryToolPanel As Panel
 End Class
