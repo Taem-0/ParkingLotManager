@@ -212,5 +212,17 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\round_cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\axiom-pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\round_cube2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\round_cube3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

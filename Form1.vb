@@ -21,6 +21,7 @@
         LoadParkingView()
     End Sub
 
+
     'Mga paraan:  
 
     Public Sub LoadDashBoard()
@@ -42,6 +43,5 @@
         MainPanel.Controls.Add(parkingView)
 
     End Sub
-
 
 End Class

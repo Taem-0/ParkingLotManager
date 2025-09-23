@@ -152,7 +152,7 @@ Partial Class HistoryControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Black
         Me.Controls.Add(Me.HistoryToolPanel)
         Me.Controls.Add(Me.HistoryDataGrid)
         Me.Name = "HistoryControl"
