@@ -1,11 +1,16 @@
 ﻿Public Class CheckInForm
 
     Public Property MainFormReference As Form1
-    Private selectedFloor As Integer
-    Private selectedSlot As String
+    Public Property SelectedFloor As Integer
+    Public Property SelectedSlot As String
 
     Private Sub CheckInForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Helpers.PanelNaRound(CheckInPanel, 30)
+
+        If SelectedFloor > 0 AndAlso Not String.IsNullOrEmpty(SelectedSlot) Then
+            ToolStripDropDownButton1.Text = $"Floor {SelectedFloor}, Slot {SelectedSlot}"
+        End If
+
     End Sub
 
     Private Sub CheckInPanel_Resize(sender As Object, e As EventArgs) Handles CheckInPanel.Resize

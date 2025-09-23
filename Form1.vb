@@ -43,6 +43,7 @@
 
     Private Sub LoadParkingView()
         MainPanel.Controls.Clear()
+        parkingView.ParentFormReference = Me
         parkingView.Dock = DockStyle.Fill
         MainPanel.Controls.Add(parkingView)
 
