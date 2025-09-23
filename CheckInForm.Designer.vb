@@ -138,7 +138,7 @@ Partial Class CheckInForm
         Me.ToolStrip1.Location = New System.Drawing.Point(197, 170)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip1.Size = New System.Drawing.Size(294, 27)
+        Me.ToolStrip1.Size = New System.Drawing.Size(312, 27)
         Me.ToolStrip1.TabIndex = 7
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -150,15 +150,15 @@ Partial Class CheckInForm
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
         Me.ToolStripDropDownButton1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never
-        Me.ToolStripDropDownButton1.Padding = New System.Windows.Forms.Padding(100, 0, 0, 0)
-        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(291, 24)
-        Me.ToolStripDropDownButton1.Text = ".        Select Floor             ."
+        Me.ToolStripDropDownButton1.Padding = New System.Windows.Forms.Padding(150, 0, 0, 0)
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(309, 24)
+        Me.ToolStripDropDownButton1.Text = ".     Select Floor        ."
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.A1ToolStripMenuItem, Me.A2ToolStripMenuItem, Me.A3ToolStripMenuItem, Me.A4ToolStripMenuItem, Me.A5ToolStripMenuItem, Me.A6ToolStripMenuItem, Me.A7ToolStripMenuItem, Me.A8ToolStripMenuItem, Me.B1ToolStripMenuItem, Me.B2ToolStripMenuItem, Me.B3ToolStripMenuItem, Me.B4ToolStripMenuItem, Me.B5ToolStripMenuItem, Me.B6ToolStripMenuItem, Me.B7ToolStripMenuItem, Me.B8ToolStripMenuItem})
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(155, 26)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem2.Tag = "1"
         Me.ToolStripMenuItem2.Text = "1st Floor"
         '
@@ -262,7 +262,7 @@ Partial Class CheckInForm
         '
         Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.A1ToolStripMenuItem1, Me.A2ToolStripMenuItem1, Me.A3ToolStripMenuItem1, Me.A4ToolStripMenuItem1, Me.A5ToolStripMenuItem1, Me.A6ToolStripMenuItem1, Me.A7ToolStripMenuItem1, Me.A8ToolStripMenuItem1, Me.A1ToolStripMenuItem2, Me.B2ToolStripMenuItem1, Me.B3ToolStripMenuItem1, Me.B4ToolStripMenuItem1, Me.B5ToolStripMenuItem1, Me.B6ToolStripMenuItem1, Me.B7ToolStripMenuItem1, Me.B8ToolStripMenuItem1})
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(155, 26)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem3.Tag = "2"
         Me.ToolStripMenuItem3.Text = "2nd Floor"
         '
@@ -366,7 +366,7 @@ Partial Class CheckInForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 170)
+        Me.Label1.Location = New System.Drawing.Point(-1, 170)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(177, 28)
         Me.Label1.TabIndex = 10

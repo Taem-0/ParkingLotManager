@@ -41,8 +41,20 @@ Public Class ParkingLotController
 
                 cmd.ExecuteNonQuery()
             End Using
-
         End Using
-
     End Sub
+
+    Public Shared Function IsSlotOccupied(floor As Integer, slot As String) As Boolean
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+
+            Using cmd As New MySqlCommand("SELECT COUNT(*) FROM parkingslots WHERE Floor = @floor AND Slot = @slot AND Status = 'Occupied'", connection)
+                cmd.Parameters.AddWithValue("@floor", floor)
+                cmd.Parameters.AddWithValue("@slot", slot)
+
+                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                Return count > 0
+            End Using
+        End Using
+    End Function
 End Class
