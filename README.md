@@ -1,2 +1,2 @@
-!\[Dashboard Screenshot](./images/Dashboard\_Screenshot.png)
+![Dashboard Screenshot](./images/Dashboard_Screenshot.png)
 
