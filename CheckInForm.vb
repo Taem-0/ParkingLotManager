@@ -7,6 +7,8 @@
     Private Sub CheckInForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Helpers.PanelNaRound(CheckInPanel, 30)
 
+        Me.ConfirmButton = ConfirmButton
+
         If SelectedFloor > 0 AndAlso Not String.IsNullOrEmpty(SelectedSlot) Then
             ToolStripDropDownButton1.Text = $"Floor {SelectedFloor}, Slot {SelectedSlot}"
         End If
@@ -144,6 +146,32 @@
         Owner = Owner.Trim().ToUpper()
 
         Dim ownerPattern As String = "^[A-Za-z]+(?:[.,]?\s[A-Za-z]+)+$"
+
+        Dim spamPattern As String = "(.)\1{3,}"
+
+        If Owner.Length < 2 Or Owner.Length > 50 Then
+            MessageBox.Show("Driver name must be between 2 and 50 characters.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            OwnerTextBox.Focus()
+            Return False
+        End If
+
+        If Owner.Contains("  ") Then
+            MessageBox.Show("Driver name cannot contain multiple spaces in a row.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            OwnerTextBox.Focus()
+            Return False
+        End If
+
+        If Not Char.IsLetter(Owner(0)) Then
+            MessageBox.Show("Driver name must start with a letter.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            OwnerTextBox.Focus()
+            Return False
+        End If
+
+        If System.Text.RegularExpressions.Regex.IsMatch(Owner, spamPattern) Then
+            MessageBox.Show("Invalid owner name. Cannot input 3 same characters in a row.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            OwnerTextBox.Focus()
+            Return False
+        End If
 
         If Not System.Text.RegularExpressions.Regex.IsMatch(Owner, ownerPattern) Then
             MessageBox.Show("Invalid owner name format. Only letters, spaces, periods, and commas are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
