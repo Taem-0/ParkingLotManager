@@ -62,9 +62,12 @@ Public Class HistoryControl
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
 
         If HistoryDataGrid.CurrentRow Is Nothing Then
+            DeleteButton.Visible = False
+
             MessageBox.Show("Please select a history entry to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
+        DeleteButton.Visible = True
 
 
         Dim row As DataGridViewRow = HistoryDataGrid.CurrentRow
