@@ -7,8 +7,6 @@
     Private Sub CheckInForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Helpers.PanelNaRound(CheckInPanel, 30)
 
-        Me.ConfirmButton = ConfirmButton
-
         If SelectedFloor > 0 AndAlso Not String.IsNullOrEmpty(SelectedSlot) Then
             ToolStripDropDownButton1.Text = $"Floor {SelectedFloor}, Slot {SelectedSlot}"
         End If
@@ -113,9 +111,13 @@
         tb.SelectionStart = selectionStart
     End Sub
 
-    Private Sub PlateNoTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PlateNoTextBox.KeyPress
-        If Not Char.IsLetterOrDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso e.KeyChar <> " "c Then
-            e.Handled = True
+    Private Sub PlateNoTextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles PlateNoTextBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            ConfirmButton.PerformClick()
+        ElseIf e.KeyCode = Keys.Escape Then
+            e.SuppressKeyPress = True
+            ExButton.PerformClick()
         End If
     End Sub
 
@@ -139,6 +141,16 @@
     Private Sub OwnerTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles OwnerTextBox.KeyPress
         If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso e.KeyChar <> " "c AndAlso e.KeyChar <> "."c AndAlso e.KeyChar <> ","c Then
             e.Handled = True
+        End If
+    End Sub
+
+    Private Sub OwnerTextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles OwnerTextBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            ConfirmButton.PerformClick()
+        ElseIf e.KeyCode = Keys.Escape Then
+            e.SuppressKeyPress = True
+            ExButton.PerformClick()
         End If
     End Sub
 
