@@ -12,8 +12,15 @@ Public Class HistoryControl
         Helpers.GridNaRound(HistoryDataGrid, 30)
         Helpers.PanelNaRound(HistoryToolPanel, 15)
 
+        HistoryDataGrid.ReadOnly = True
 
     End Sub
+
+    Private Sub HistoryControl_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        DeleteButton.Left = (MyBase.Width - DeleteButton.Width) \ 2
+    End Sub
+
+
 
     Private Sub HistoryToolPanel_Resize(sender As Object, e As EventArgs) Handles HistoryToolPanel.Resize
         Helpers.PanelNaRound(HistoryToolPanel, 15)
@@ -47,32 +54,33 @@ Public Class HistoryControl
         Label1.Top = (HistoryToolPanel.Height - Label1.Height) \ 2
     End Sub
 
-    Private Sub HistoryDataGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles HistoryDataGrid.CellContentClick
-
+    Private Sub HistoryDataGrid_selectionChanged(sender As Object, e As EventArgs) Handles HistoryDataGrid.SelectionChanged
+        DeleteButton.Visible = (HistoryDataGrid.CurrentRow IsNot Nothing)
     End Sub
 
 
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
-        ' Make sure a row is selected
+
         If HistoryDataGrid.CurrentRow Is Nothing Then
             MessageBox.Show("Please select a history entry to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
+
         Dim row As DataGridViewRow = HistoryDataGrid.CurrentRow
         Dim historyID As Object = row.Cells("HistoryID").Value
+        Dim slotID As Object = row.Cells("Slot").Value
+        Dim Floor As Object = row.Cells("Floor").Value
 
         If historyID Is Nothing OrElse IsDBNull(historyID) Then
             MessageBox.Show("Invalid row selected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
 
-        ' Ask for confirmation
-        If MessageBox.Show("Are you sure you want to delete this history entry?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then
+        If MessageBox.Show("Are you sure you want to delete this history entry?: " & vbNewLine & "( Floor " & Floor & " ,Slot " & slotID & ")", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then
             Return
         End If
 
-        ' Delete from database
         Try
             Using connection As New MySqlConnection(InitializeDatabase.ConnString_Table)
                 connection.Open()
@@ -93,4 +101,5 @@ Public Class HistoryControl
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
 
     End Sub
+
 End Class

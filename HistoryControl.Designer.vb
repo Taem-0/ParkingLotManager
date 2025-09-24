@@ -85,11 +85,11 @@ Partial Class HistoryControl
         Me.DeleteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DeleteButton.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DeleteButton.Location = New System.Drawing.Point(246, 734)
+        Me.DeleteButton.Location = New System.Drawing.Point(393, 746)
         Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(500, 62)
+        Me.DeleteButton.Size = New System.Drawing.Size(194, 50)
         Me.DeleteButton.TabIndex = 5
-        Me.DeleteButton.Text = "Check Out ←"
+        Me.DeleteButton.Text = "DELETE"
         Me.DeleteButton.UseVisualStyleBackColor = False
         '
         'HistoryControl
