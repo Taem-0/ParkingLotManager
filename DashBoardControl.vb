@@ -176,4 +176,50 @@ Public Class DashBoardControl
     Private Sub ParkingLotDataGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ParkingLotDataGrid.CellContentClick
 
     End Sub
+
+    Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
+
+        If ParkingLotDataGrid.CurrentRow Is Nothing Then
+            MessageBox.Show("Please select a record first.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        Dim row As DataGridViewRow = ParkingLotDataGrid.CurrentRow
+
+
+        Dim plate As String = If(row.Cells("PlateNumber").Value, String.Empty).ToString().Trim()
+        Dim owner As String = If(row.Cells("Owner").Value, String.Empty).ToString().Trim()
+
+        If String.IsNullOrEmpty(plate) OrElse String.IsNullOrEmpty(owner) Then
+            MessageBox.Show("Selected row has no Plate Number or Owner. Cannot update.", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+
+        Dim idValue = row.Cells("ID").Value
+        Dim slotId As Integer = 0
+        If idValue Is Nothing OrElse IsDBNull(idValue) OrElse Not Integer.TryParse(idValue.ToString(), slotId) Then
+            MessageBox.Show("Selected record does not have a valid ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        Dim upd As New UpdateControl()
+        upd.MainFormReference = ParentFormReference
+        upd.SlotID = slotId
+        upd.PlateNo = plate
+        upd.OwnerName = owner
+
+        If ParentFormReference IsNot Nothing Then
+            ParentFormReference.MainPanel.Controls.Clear()
+            upd.Dock = DockStyle.Fill
+            ParentFormReference.MainPanel.Controls.Add(upd)
+        Else
+            Me.Parent.Controls.Clear()
+            upd.Dock = DockStyle.Fill
+            Me.Parent.Controls.Add(upd)
+        End If
+    End Sub
+
+
+
 End Class

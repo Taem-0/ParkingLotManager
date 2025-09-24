@@ -176,6 +176,12 @@
     <Compile Include="ParkingViewControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UpdateControl.Designer.vb">
+      <DependentUpon>UpdateControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CheckInForm.resx">
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ParkingViewControl.resx">
       <DependentUpon>ParkingViewControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateControl.resx">
+      <DependentUpon>UpdateControl.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

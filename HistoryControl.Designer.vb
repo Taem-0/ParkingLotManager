@@ -24,9 +24,9 @@ Partial Class HistoryControl
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.HistoryDataGrid = New System.Windows.Forms.DataGridView()
+        Me.DeleteButton = New System.Windows.Forms.Button()
         Me.HistoryToolPanel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DeleteButton = New System.Windows.Forms.Button()
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.HistoryToolPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -49,12 +49,24 @@ Partial Class HistoryControl
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.HistoryDataGrid.DefaultCellStyle = DataGridViewCellStyle1
-        Me.HistoryDataGrid.Location = New System.Drawing.Point(0, 78)
-        Me.HistoryDataGrid.Margin = New System.Windows.Forms.Padding(4)
+        Me.HistoryDataGrid.Location = New System.Drawing.Point(0, 63)
         Me.HistoryDataGrid.Name = "HistoryDataGrid"
         Me.HistoryDataGrid.RowHeadersWidth = 51
-        Me.HistoryDataGrid.Size = New System.Drawing.Size(1003, 661)
+        Me.HistoryDataGrid.Size = New System.Drawing.Size(752, 537)
         Me.HistoryDataGrid.TabIndex = 0
+        '
+        'DeleteButton
+        '
+        Me.DeleteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DeleteButton.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteButton.Location = New System.Drawing.Point(295, 606)
+        Me.DeleteButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DeleteButton.Name = "DeleteButton"
+        Me.DeleteButton.Size = New System.Drawing.Size(146, 41)
+        Me.DeleteButton.TabIndex = 5
+        Me.DeleteButton.Text = "DELETE"
+        Me.DeleteButton.UseVisualStyleBackColor = False
         '
         'HistoryToolPanel
         '
@@ -64,45 +76,32 @@ Partial Class HistoryControl
         Me.HistoryToolPanel.BackgroundImage = Global.ParkingLotManager.My.Resources.Resources.Untitled
         Me.HistoryToolPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.HistoryToolPanel.Controls.Add(Me.Label1)
-        Me.HistoryToolPanel.Location = New System.Drawing.Point(4, 20)
-        Me.HistoryToolPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.HistoryToolPanel.Location = New System.Drawing.Point(3, 16)
         Me.HistoryToolPanel.Name = "HistoryToolPanel"
-        Me.HistoryToolPanel.Size = New System.Drawing.Size(995, 50)
+        Me.HistoryToolPanel.Size = New System.Drawing.Size(746, 41)
         Me.HistoryToolPanel.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(443, 14)
+        Me.Label1.Location = New System.Drawing.Point(332, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 36)
+        Me.Label1.Size = New System.Drawing.Size(84, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "LOGS"
         '
-        'DeleteButton
-        '
-        Me.DeleteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DeleteButton.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DeleteButton.Location = New System.Drawing.Point(393, 746)
-        Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(194, 50)
-        Me.DeleteButton.TabIndex = 5
-        Me.DeleteButton.Text = "DELETE"
-        Me.DeleteButton.UseVisualStyleBackColor = False
-        '
         'HistoryControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.HistoryToolPanel)
         Me.Controls.Add(Me.HistoryDataGrid)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "HistoryControl"
-        Me.Size = New System.Drawing.Size(1003, 799)
+        Me.Size = New System.Drawing.Size(752, 649)
         CType(Me.HistoryDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.HistoryToolPanel.ResumeLayout(False)
         Me.HistoryToolPanel.PerformLayout()

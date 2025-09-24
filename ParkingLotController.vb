@@ -44,6 +44,20 @@ Public Class ParkingLotController
         End Using
     End Sub
 
+    Public Shared Sub UpdateParkingLotRecord(slotID As Integer, plateNumber As String, owner As String)
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+            Using cmd As New MySqlCommand("UPDATE parkingslots SET PlateNumber = @platenumber, Owner = @owner WHERE ID = @id", connection)
+                cmd.Parameters.AddWithValue("@platenumber", plateNumber)
+                cmd.Parameters.AddWithValue("@owner", owner)
+                cmd.Parameters.AddWithValue("@id", slotID)
+                cmd.ExecuteNonQuery()
+            End Using
+            connection.Close()
+        End Using
+    End Sub
+
+
     Public Shared Function IsSlotOccupied(floor As Integer, slot As String) As Boolean
         Using connection As New MySqlConnection(connectionString)
             connection.Open()
