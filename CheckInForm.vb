@@ -145,7 +145,7 @@
     Private Function OwnerValid(Owner As String) As Boolean
         Owner = Owner.Trim().ToUpper()
 
-        Dim ownerPattern As String = "^[A-Za-z]+(?:[.,]?\s[A-Za-z]+)+$"
+        Dim ownerPattern As String = "^[A-Za-z]+(?:[.,]?[ ][A-Za-z]+){0,19}$"
 
         Dim spamPattern As String = "(.)\1{3,}"
 
